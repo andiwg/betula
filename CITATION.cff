@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "BETULA: Fast clustering of large data with improved BIRCH CF-Trees"
+version: 0.1.0
+authors:
+  - family-names: Lang
+    given-names: Andreas
+  - family-names: Schubert
+    given-names: Erich
+repository-code: "https://github.com/andiwg/betula-rust"
+license: MIT OR Apache-2.0
+license-url: "https://opensource.org/licenses/MIT"
+abstract: >
+  Rust implementation of BETULA, an improved version of the BIRCH algorithm
+  for fast, streamable data aggregation and clustering. BETULA introduces
+  improved cluster features that avoid the catastrophic cancellation present
+  in the original BIRCH CF-Trees, without significant performance cost.
+doi: 10.1016/J.IS.2021.101918
+url: "https://www.sciencedirect.com/science/article/pii/S0306437921001253"
+journal: "Information Systems"
+volume: 108
+pages: 101918
+date-released: 2022-02-25
+keywords:
+  - BIRCH
+  - CF-Tree
+  - Cluster analysis
+  - Gaussian mixture modeling
+  - Hierarchical agglomerative clustering
+  - k-means
