@@ -7,12 +7,20 @@ name = "betulars"
 description = "Python bindings for BETULA — Fast, streamable data clustering in Rust"
 readme = "README.md"
 license = { text = "MIT OR Apache-2.0" }
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dependencies = ["numpy>=1.26"]
 dynamic = ["version"]
+authors = [
+    { name = "Andreas Lang", email = "andreas.lang@tu-dortmund.de" },
+]
+keywords = ["clustering", "birch", "cf-tree", "streaming", "machine-learning"]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -24,8 +32,14 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
 
+[project.urls]
+Homepage = "https://github.com/andiwg/betula"
+Repository = "https://github.com/andiwg/betula"
+Changelog = "https://github.com/andiwg/betula/blob/main/CHANGELOG.md"
+
 [tool.maturin]
 features = ["python"]
+abi3 = true
 # Tells Maturin to look inside the `betulars` folder for the Python code
 python-source = "."
 # Automatically includes the compiled Rust binary inside the python package
