@@ -5,13 +5,31 @@ version = "0.1.0"
 edition = "2024"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/andiwg/betula"
+categories = ["algorithms", "data-structures", "science"]
+keywords = ["clustering", "birch", "cf-tree", "streaming", "machine-learning"]
+exclude = [
+    ".cargo/",
+    "__pycache__/",
+    "betulars/",
+    "data/",
+    "misc/",
+    "target/",
+    ".venv/",
+    "*.npy",
+    "*.so",
+    "*.pyi",
+    "pyproject.toml",
+    "scripts/",
+    "CITATION.cff",
+]
 
 [lib]
 name = "betula"
 path = "src/lib.rs"
 test = true
 doc = true
-crate-type = ["cdylib", "rlib"]
+crate-type = ["rlib"]
 
 [[bin]]
 name = "betula"
